@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Support of foreign character-->
+    <meta charset="utf-8" />
+    
+    <!-- If Compatibility setting. It ensures IE users the latest rendering engine-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Get physical width of the mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Name of the website displayed on the broswer tab-->
+    <title>Chinese Traditional Instruments</title>
+    
+    <!-- Link custon stylesheet to the index layout page -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/compose-style.css" rel="stylesheet">
+    
+    <!-- Link the lastest modified bootstrap style sheet -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Lastest JQuery framework, necessary for using bootstrap's JS plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- link the lastest midifed bootstrap JS library -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.4/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.4/addons/p5.dom.min.js"></script>
+    <!--<script src="p5.sound.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/addons/p5.sound.js"></script>
+    
+    <!-- Custom javascript-->
+   
+    <script src="js/ContactMeMovement.js"></script>
+    <script src="js/ComposeManager.js"></script>
+
+    
+    </head>
+    
+    <body>
+        <div class="head">
+            <header>
+
+            </header>
+
+            <nav>
+                <div class="part1"></div>
+                <div class="part2">
+                    <ul>
+                        <li><a class="instruments"  href="index.html">Instruments</a></li>
+                        <li><a class="compose" href="#">Compose</a></li>
+                        <li><a class="contactme" role="button">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="leftbar">
+                    <ul>
+                        <li class="btn-zheng"><a role="button">&nbsp</a></li>
+                        <li class="btn-dizi"><a role="button">&nbsp</a></li>
+                        <li class="btn-erhu"><a role="button">&nbsp</a></li>
+                        <li class="btn-sun"><a role="button">&nbsp</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div id="stage" class="stage">
+            <div class="line line-top"> </div>
+            <div class="line"> </div>
+            <div class="line"> </div>
+            <div class="line line-bot"> </div>
+            <div class="button-container">
+                <div role="button" class="playbuttoncontainer" > 
+                    <div class="playbutton">
+                    
+                    </div>
+                </div>
+                
+                <div role="button" class="stopbuttoncontainer">
+                    <div class="stopbutton">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contactme">
+            <form>
+                <div class="form-group form-group-lg">
+                    <label for="inputName">Name</label>
+                    <input class="form-control input-lg" id="inputName" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="form-group form-group-lg">
+                    <label for="inputEmail">Email Address</label>
+                    <input class="form-control input-lg" id="inputEmail"  type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group form-group-lg">
+                    <label for="inputContent">Content</label>
+                    <textarea class="form-control input-lg" id="inputContent" type="text" name="content" rows="5" placeholder="What you want to say ..."></textarea>
+                </div>
+                <div class="form-group form-group-lg">
+                    <button type="submit" class="btn btn-default btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

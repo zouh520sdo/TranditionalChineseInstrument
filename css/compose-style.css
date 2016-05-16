@@ -1,0 +1,72 @@
+div.leftbar > ul > li > a {
+  border: solid #a29888 0px;
+  transition: 0.0s !important;
+}
+
+div.stage {
+  height: 1200px;
+  background-color: #fcf7e8;
+}
+
+div.stage div.line {
+  position: relative;
+  float: right;
+  height: 150px;
+  background-color: #dfd0ba;
+  width: 75%;
+  right: 7.25%;
+  margin-top: 40px;
+}
+
+div.stage div.button-container {
+  position: absolute;
+  left: 25%;
+  top: 77%;
+}
+
+div.stage div.button-container div.playbuttoncontainer {
+  position: relative;
+  background-color: #dfd0ba;
+  height: 60px;
+  width: 80px;
+  border-radius: 10%;
+  display: inline-block;
+}
+
+div.stage div.button-container div.playbuttoncontainer div.playbutton {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+  border-left: solid 40px #fcf7e8;
+  border-right: solid 0px #fcf7e8;
+  margin: 0 auto;
+  top: 10px;
+  transition: 0.3s;
+}
+
+div.stage div.button-container div.stopbuttoncontainer {
+  position: relative;
+  background-color: #dfd0ba;
+  height: 60px;
+  width: 80px;
+  border-radius: 10%;
+  display: inline-block;
+}
+
+div.stage div.button-container div.stopbuttoncontainer div.stopbutton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #fcf7e8;
+  margin: 0 auto;
+  top: 10px;
+  transition: 0.3s;
+}
+
+div.stage canvas.StageCanvas {
+  position: absolute;
+  right: 7.25%;
+  width: 75%;
+}
