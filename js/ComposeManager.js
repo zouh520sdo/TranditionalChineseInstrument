@@ -1,3 +1,7 @@
+//**** Composing function page *///
+//*** Created by Huang Zou *///
+//*** BMCC MMP240 Final Project: Tranditional Chinese Instruments *///
+
 var isSelected = new Array();
 isSelected["zheng"] = false;
 isSelected["dizi"] = false;
