@@ -6,6 +6,11 @@ var isContactMeOn = false;
 
 $(document).ready(function(){
     
+    centerBody();
+    $(window).resize(function(){
+        centerBody();
+    });
+    
     part1Height = $(".head>nav>.part1").css("height").split("px");
     part1Height = Number(part1Height[0]);
     
@@ -80,4 +85,12 @@ function showContactMe() {
 function hideContactMe() {
    $("div.contactme").css("width", "0px");
    $("div.contactme").css("height","0px"); $("div.contactme").css("top","-500px");
+}
+
+/** Place body in center */
+function centerBody() {
+    var bodyWidth = parseInt($(".body").css("width"));
+    var windowWidth = $(window).width();
+    var bodyLeft = (windowWidth - bodyWidth) / 2;
+    $(".body").css("left", bodyLeft + "px");
 }
