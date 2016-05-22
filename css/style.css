@@ -105,7 +105,7 @@ html, body {
     width: 100px;
     height: 100px;
     line-height: 100px;
-    background-color: rgb(218, 202, 179);
+    background-color: rgba(218, 202, 179, 1);
     transition: 0.4s;
 }
 .head nav .leftbar>ul>li.btn-zheng>a{
@@ -171,6 +171,7 @@ div.profile>p.text {
     font-size: 27pt;
     margin-left: 50px;
     margin-right: 50px;
+    color: #ffffff;
 }
 
 /** Set up audio segaments*/

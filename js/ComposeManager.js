@@ -20,7 +20,7 @@ var stageWidth;
 var stageHeight;
 var composeCanvas;
 
-// For sound rectangles
+// For sound rectanglesart
 var soundRects = new Array();
 var NONE_SELECTED = -1;
 var selectedRect = NONE_SELECTED;
