@@ -49,6 +49,12 @@ div.gallery > img {
 }
 
 div.gallery:hover > img {
+  -webkit-filter: drop-shadow(8px 8px 10px black);
+  filter: drop-shadow(8px 8px 10px black);
+  -webkit-filter: saturate(1.5);
+  filter: saturate(1.5);
+  -webkit-filter: brightness(1.25);
+  filter: brightness(1.25);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
