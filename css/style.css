@@ -139,6 +139,7 @@ div.gallery {
     position: relative;
     left: 325px;
     top: 25px;
+    text-align: center;
 }
 div.gallery>img {
     

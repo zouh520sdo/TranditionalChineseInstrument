@@ -33,7 +33,7 @@ body {
 //    background-position: center;
 //}
 
-// For index stage
+//*** For index stage */
 div.border {
     width: 100%;
     height: 126px;
@@ -49,6 +49,33 @@ div.zheng, div.dizi, div.erhu, div.xun {
 }
 div.leftbar {
     z-index: 100;
+    
+    ul>li {
+        background-image: url(../images/art/mo.png);
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.4s;
+    }
+}
+
+div.gallery {
+    background-image: url(../images/art/window1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-width: 0px;
+}
+//Hover effect for image
+div.gallery>img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+div.gallery:hover>img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 // For composing stage

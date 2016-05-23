@@ -25,6 +25,34 @@ div.leftbar {
   z-index: 100;
 }
 
+div.leftbar ul > li {
+  background-image: url(../images/art/mo.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+div.gallery {
+  background-image: url(../images/art/window1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-width: 0px;
+}
+
+div.gallery > img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+div.gallery:hover > img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 div.stage {
   background-color: rgba(252, 247, 232, 0.75);
 }

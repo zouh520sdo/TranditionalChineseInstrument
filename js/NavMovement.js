@@ -115,10 +115,14 @@ $(document).scroll(function(e) {
 });
 
 function scrollInto(btn) {
+    $(".head>nav>.leftbar>ul>li.btn-" + btn).css("background-size", "100%");
+    
     $(".head>nav>.leftbar>ul>li.btn-" + btn + ">a").css("width","150px").css("height","150px").css("line-height", "150px").css("background-color", "rgb(219, 201, 160)");    
 }
 
 function scrollOut(btn) {
+    $(".head>nav>.leftbar>ul>li.btn-" + btn).css("background-size", "70%");
+    
     $(".head>nav>.leftbar>ul>li.btn-" + btn + ">a").css("width","100px").css("height","100px").css("line-height", "100px").css("background-color", "rgb(218, 202, 179)");     
 }
 
